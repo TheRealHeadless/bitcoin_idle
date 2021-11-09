@@ -1,0 +1,26 @@
+Let's make a game!
+	name:Bitcoin Idle
+	author:TheRealHeadless
+	desc: MINE, BUY, EARN, A game where you make bitcoins using cards and buying better cards
+	created:09/11/2021
+	version:0.10
+
+Layout
+*main
+  contains:res, buttons
+  *res
+    contains:Resources
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
+  *buildings
+    contains:BulkDisplay, Buildings
+    header:Buildings
+    tooltip origin:left
+  *upgrades
+    contains:Upgrades
+    header:Upgrades
+    costs:show
+    names:show
